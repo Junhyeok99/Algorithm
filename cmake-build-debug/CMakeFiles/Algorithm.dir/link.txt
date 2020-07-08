@@ -1,1 +1,0 @@
-/usr/bin/c++   -g   CMakeFiles/Algorithm.dir/1260.cpp.o  -o Algorithm 

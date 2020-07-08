@@ -1,3 +1,0 @@
-/mnt/c/Users/apple/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/edit_cache.dir
-/mnt/c/Users/apple/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/apple/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/Algorithm.dir

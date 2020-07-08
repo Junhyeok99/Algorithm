@@ -1,4 +1,0 @@
-ToolSet: Ubuntu 16.04.6 LTS (local)@C:\Users\apple\AppData\Local\Microsoft\WindowsApps\ubuntu1604.exe
-Options: 
-
-Options:
