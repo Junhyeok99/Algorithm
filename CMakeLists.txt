@@ -3,4 +3,4 @@ project(Algorithm)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Algorithm 1764.cpp)
+add_executable(Algorithm 1927.cpp)
