@@ -6,8 +6,6 @@
 #include "disk_controller.h"
 #include "../../utils/utils.h"
 #include <algorithm>
-#include <iostream>
-#include <cstdio>
 
 bool cmp(vector<int> a, vector<int> b) {
     return a[0] < b[0] || (a[0] == b[0] && (a[1] < b[1]));
@@ -31,28 +29,26 @@ int solution(vector<vector<int>> jobs) {
 //    사용 가능한 schedule의 pool
     vector<vector<int>> pool;
 
+//    job이 모두 done 되기 전까지 무한 반복
     while (done != jobs.size()) {
-        vector<vector<int>> bucket;
-        printf("<%d\n", time);
+//        jobs를 탐색하며 작업 가능한 job scheduling
         for (int i = job_index; i < jobs.size(); i++) {
             if (jobs[i][0] > time) {
                 break;
             } else {
-                bucket.push_back(jobs[i]);
                 pool.push_back(jobs[i]);
                 job_index++;
             }
         }
-        printf("pool size: %ld\n", pool.size());
-        printf("done: %d\n", done);
+
+//        작업 가능한 job이 없으면 시간 경과
         if (pool.empty()) {
             time = jobs[job_index][0];
             continue;
         } else {
-            bucket.clear();
+//            작업 가능시 가장 짧은 작업 선택
             int shortest = pool[0][1];
             auto shortest_it = pool.begin();
-            printf("shortest: %d\n", shortest);
             for (auto it = shortest_it; it != pool.end(); it++) {
                 if(it->at(1) < shortest) {
                     shortest = it->at(1);
@@ -65,9 +61,8 @@ int solution(vector<vector<int>> jobs) {
             pool.erase(shortest_it);
             done++;
         };
-        printf("answer: %d\n", answer);
-        printf("%d>\n", time);
     }
 
+//    평균값 계산
     return answer / jobs.size();
 }
