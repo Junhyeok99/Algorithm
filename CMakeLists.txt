@@ -3,4 +3,4 @@ project(Algorithm)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Algorithm Beakjoon/1149.cpp)
+add_executable(Algorithm Programmers/disk_controller.cpp)

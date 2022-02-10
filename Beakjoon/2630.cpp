@@ -1,5 +1,5 @@
 //
-// Created by apple on 2020-07-23.
+// Created by junhyeok on 2020-07-23.
 //
 // https://www.acmicpc.net/problem/2630
 #include <iostream>
