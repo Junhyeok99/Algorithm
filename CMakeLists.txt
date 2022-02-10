@@ -3,4 +3,4 @@ project(Algorithm)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Algorithm Programmers/disk_controller.cpp)
+add_executable(Algorithm Programmers/main.cpp utils/utils.cpp Programmers/disk_controller/disk_controller.cpp)
