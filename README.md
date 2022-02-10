@@ -1,2 +1,2 @@
 # Algorithm
-Baekjoon algorithm problems
+Baekjoon, Programmers algorithm problems
