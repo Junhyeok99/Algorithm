@@ -9,7 +9,7 @@
 
 using namespace std;
 
-void print_vector(vector<int> v);
-void print_vector(vector<char> v);
+void print_vector(const vector<int>& v);
+void print_vector(const vector<char>& v);
 
 #endif //ALGORITHM_UTILS_H
