@@ -12,10 +12,11 @@ int main() {
 
     cin >> a >> b >> v;
 
+    // (a-b)(x-a) + a >= v
+    // find minimum x
+
     int diff = a - b;
     int before_height = v - a;
-
-//    cout << ceil(((float)before_height / diff) + 1);
 
     printf("%d\n", (int)ceil(((double)before_height / diff) + 1));
 
