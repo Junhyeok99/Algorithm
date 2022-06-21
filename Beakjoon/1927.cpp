@@ -24,7 +24,7 @@ int main() {
                 printf("%d\n", *s.begin());
                 m[*s.begin()]--;
 
-                if(m[*s.begin()] == 0) {
+                if (m[*s.begin()] == 0) {
                     s.erase(s.begin());
                 }
             }

@@ -50,7 +50,7 @@ int solution(vector<vector<int>> jobs) {
             int shortest = pool[0][1];
             auto shortest_it = pool.begin();
             for (auto it = shortest_it; it != pool.end(); it++) {
-                if(it->at(1) < shortest) {
+                if (it->at(1) < shortest) {
                     shortest = it->at(1);
                     shortest_it = it;
                 }

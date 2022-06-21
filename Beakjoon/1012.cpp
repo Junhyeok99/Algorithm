@@ -31,26 +31,26 @@ int main() {
         queue<pair<int, int>> q;
         for (int i = 1; i <= h; i++) {
             for (int j = 1; j <= w; j++) {
-                if(m[i][j] == -1) {
+                if (m[i][j] == -1) {
                     q.push(make_pair(j, i));
                     cnt++;
                 }
 
-                while(!q.empty()) {
+                while (!q.empty()) {
                     pair<int, int> cur = q.front();
                     q.pop();
 
-                    if(m[cur.second][cur.first] != -1)
+                    if (m[cur.second][cur.first] != -1)
                         continue;
                     m[cur.second][cur.first] = cnt;
 
-                    if(m[cur.second - 1][cur.first] == -1)
+                    if (m[cur.second - 1][cur.first] == -1)
                         q.push(make_pair(cur.first, cur.second - 1));
-                    if(m[cur.second + 1][cur.first] == -1)
+                    if (m[cur.second + 1][cur.first] == -1)
                         q.push(make_pair(cur.first, cur.second + 1));
-                    if(m[cur.second][cur.first - 1] == -1)
+                    if (m[cur.second][cur.first - 1] == -1)
                         q.push(make_pair(cur.first - 1, cur.second));
-                    if(m[cur.second][cur.first + 1] == -1)
+                    if (m[cur.second][cur.first + 1] == -1)
                         q.push(make_pair(cur.first + 1, cur.second));
                 }
             }

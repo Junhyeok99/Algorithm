@@ -13,8 +13,8 @@ int main() {
     cin >> n >> p;
 
     int ans = 0;
-    vector<bool> visited(n+1);
-    vector<vector<int>> v(n+1);
+    vector<bool> visited(n + 1);
+    vector<vector<int>> v(n + 1);
     queue<int> bfs;
 
     for (; p > 0; p--) {
@@ -24,22 +24,22 @@ int main() {
         v[j].push_back(i);
     }
 
-    for(auto i : visited)
+    for (auto i: visited)
         i = false;
 
     bfs.push(1);
-    while(!bfs.empty()) {
+    while (!bfs.empty()) {
         int cur = bfs.front();
         bfs.pop();
 
-        if(visited[cur])
+        if (visited[cur])
             continue;
 
         visited[cur] = true;
         ans++;
 
-        for(auto i : v[cur]) {
-            if(!visited[i])
+        for (auto i: v[cur]) {
+            if (!visited[i])
                 bfs.push(i);
         }
     }

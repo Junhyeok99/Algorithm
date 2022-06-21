@@ -16,7 +16,7 @@ int main() {
     map<int, int> m;
     set<int> s;
 
-    for(cin >> n; n > 0; n--) {
+    for (cin >> n; n > 0; n--) {
         int t;
         scanf("%d", &t);
         v.push_back(t);
@@ -24,11 +24,11 @@ int main() {
     }
 
     int c = 0;
-    for(auto i: s) {
+    for (auto i: s) {
         m[i] = c++;
     }
 
-    for(auto i: v)
+    for (auto i: v)
         printf("%d ", m[i]);
 
 }

@@ -14,21 +14,20 @@ bool is_balanced(const string &str) {
     for (char i: str) {
         if (i == '(' || i == '[') {
             s.push(i);
-        }
-        else if (i == ')') {
-            if(!s.empty() && s.top() == '(')
+        } else if (i == ')') {
+            if (!s.empty() && s.top() == '(')
                 s.pop();
             else
                 return false;
         } else if (i == ']') {
-            if(!s.empty() && s.top() == '[')
+            if (!s.empty() && s.top() == '[')
                 s.pop();
             else
                 return false;
         }
     }
 
-    if(!s.empty())
+    if (!s.empty())
         return false;
 
     return true;
@@ -37,10 +36,10 @@ bool is_balanced(const string &str) {
 int main() {
     while (true) {
         string s;
-        while(true) {
+        while (true) {
             char c = getchar();
 
-            if(c == '\n')
+            if (c == '\n')
                 break;
 
             s.push_back(c);

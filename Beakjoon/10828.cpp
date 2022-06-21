@@ -15,7 +15,7 @@ int main() {
         string str;
         cin >> str;
 
-        if(str == "push") {
+        if (str == "push") {
             int t;
             scanf("%d", &t);
             s.push(t);

@@ -10,18 +10,18 @@ int main() {
     int n, m;
     int *arr;
 
-    arr = (int *)malloc(sizeof(int) * 20000001);
+    arr = (int *) malloc(sizeof(int) * 20000001);
 
-    for(int i = 0; i <= 20000000; i++)
+    for (int i = 0; i <= 20000000; i++)
         arr[i] = 0;
 
-    for(cin >> n ; n > 0 ; n--) {
+    for (cin >> n; n > 0; n--) {
         int in;
         scanf("%d", &in);
         arr[in + 10000000]++;
     }
 
-    for(cin >> m; m > 0; m--) {
+    for (cin >> m; m > 0; m--) {
         int in;
         scanf("%d", &in);
         printf("%d ", arr[in + 10000000]);

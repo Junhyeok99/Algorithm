@@ -11,10 +11,10 @@ int main() {
     int n;
     deque<int> d;
 
-    for(cin >> n; n > 0; n--)
+    for (cin >> n; n > 0; n--)
         d.push_front(n);
 
-    while(d.size() != 1) {
+    while (d.size() != 1) {
         d.pop_front();
         d.push_back(d.front());
         d.pop_front();

@@ -6,12 +6,12 @@
 
 #include "utils.h"
 
-void print_vector(const vector<int>& v) {
-    for (int i : v)
+void print_vector(const vector<int> &v) {
+    for (int i: v)
         printf("%d, ", i);
 }
 
-void print_vector(const vector<char>& v) {
-    for (char i : v)
+void print_vector(const vector<char> &v) {
+    for (char i: v)
         printf("%c, ", i);
 }

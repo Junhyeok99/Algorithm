@@ -17,13 +17,13 @@ int main() {
         int t;
         scanf("%d", &t);
 
-        if(!t) {
-            if(s.empty())
+        if (!t) {
+            if (s.empty())
                 printf("0\n");
             else {
                 printf("%d\n", *s.rbegin());
                 m[*s.rbegin()]--;
-                if(m[*s.rbegin()] == 0)
+                if (m[*s.rbegin()] == 0)
                     s.erase(*s.rbegin());
             }
         } else {

@@ -22,9 +22,9 @@ int main() {
         int t;
         cin >> t;
 
-        if(t < min)
+        if (t < min)
             min = t;
-        if(t > max)
+        if (t > max)
             max = t;
         sum += t;
         a.push_back(t);
@@ -34,23 +34,23 @@ int main() {
     sort(a.begin(), a.end());
 
     // float round 시 -0 issue로 int 타입 변경
-    cout << (int)(round((double)sum / n)) << endl;
-    cout << a[n/2] << endl;
+    cout << (int) (round((double) sum / n)) << endl;
+    cout << a[n / 2] << endl;
     a.clear();
     sum = 0; //value
 
     // 최다 빈도수 확인
-    for(auto i: m) {
-        if(i.second > sum)
+    for (auto i: m) {
+        if (i.second > sum)
             sum = i.second;
     }
     // 최다 빈도로 나온 숫자들 배열에 저장
-    for(auto i : m) {
-        if(i.second == sum)
+    for (auto i: m) {
+        if (i.second == sum)
             a.push_back(i.first);
     }
 
-    if(a.size() == 1)
+    if (a.size() == 1)
         cout << a[0] << endl;
     else
         cout << a[1] << endl;

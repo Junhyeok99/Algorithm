@@ -14,16 +14,16 @@ int main() {
     vector<int> v;
 
     cin >> n >> k;
-    for(int i = 0; i < n ; i++)
-        q.push(i+1);
+    for (int i = 0; i < n; i++)
+        q.push(i + 1);
 
     cout << "<";
 
     int cnt = 1;
-    while(!q.empty()) {
-        if(cnt == k) {
+    while (!q.empty()) {
+        if (cnt == k) {
             cout << q.front();
-            if(q.size() != 1)
+            if (q.size() != 1)
                 cout << ", ";
             q.pop();
             cnt = 1;

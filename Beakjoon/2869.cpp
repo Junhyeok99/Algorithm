@@ -18,7 +18,7 @@ int main() {
     int diff = a - b;
     int before_height = v - a;
 
-    printf("%d\n", (int)ceil(((double)before_height / diff) + 1));
+    printf("%d\n", (int) ceil(((double) before_height / diff) + 1));
 
     return 0;
 }

@@ -26,8 +26,8 @@ int main() {
         }
     }
 
-    while(true) {
-        if(s.empty())
+    while (true) {
+        if (s.empty())
             break;
 
         sum += s.top();

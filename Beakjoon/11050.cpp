@@ -7,14 +7,14 @@
 using namespace std;
 
 int fact(int n) {
-    if(n == 0)
+    if (n == 0)
         return 1;
-    return n * fact(n-1);
+    return n * fact(n - 1);
 }
 
 int mul_a2b(int a, int b) {
     int m = 1;
-    for(int i = a; i >= b; i--) {
+    for (int i = a; i >= b; i--) {
         m *= i;
     }
     return m;

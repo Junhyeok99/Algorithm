@@ -9,7 +9,9 @@
 using namespace std;
 
 int main() {
-    vector<vector<int>> input = {{0, 3}, {1, 9}, {2, 6}};
+    vector<vector<int>> input = {{0, 3},
+                                 {1, 9},
+                                 {2, 6}};
     cout << solution(input) << " <-answer" << endl;
     return 0;
 }
