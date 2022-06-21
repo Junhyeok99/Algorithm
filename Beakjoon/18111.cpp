@@ -10,7 +10,7 @@ using namespace std;
 #define DESTROY_BLOCK 2
 #define PUT_BLOCK 1
 
-int get_time(const vector<vector<int>>& v, int height) {
+int get_time(const vector<vector<int>> &v, int height) {
     int sum = 0;
 
     for (auto &i: v) {
@@ -53,7 +53,7 @@ int main() {
     sum += b;
     if (max > (sum / (m * n)))
         max = sum / (m * n);
-    if(max > 256)
+    if (max > 256)
         max = 256;
 
     int height = min;

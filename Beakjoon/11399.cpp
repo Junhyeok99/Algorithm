@@ -21,7 +21,7 @@ int main() {
 
     sort(v.begin(), v.end());
 
-    for(int i = v.size(); i > 0; i--)
+    for (int i = v.size(); i > 0; i--)
         sum += i * v[v.size() - i];
 
     cout << sum;

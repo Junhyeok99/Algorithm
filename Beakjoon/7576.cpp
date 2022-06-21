@@ -22,8 +22,7 @@ int main() {
             if (t == 1) {
                 q.push(make_pair(make_pair(j, i), 0));
                 v[i].push_back(0);
-            }
-            else
+            } else
                 v[i].push_back(t);
         }
     }
@@ -57,18 +56,18 @@ int main() {
     }
 
     bool chk = true;
-    for(const auto& i : v) {
-        for(auto j : i) {
-            if(j == 0) {
+    for (const auto &i: v) {
+        for (auto j: i) {
+            if (j == 0) {
                 chk = false;
                 break;
             }
         }
-        if(!chk)
+        if (!chk)
             break;
     }
 
-    if(!chk)
+    if (!chk)
         cout << -1;
     else
         cout << d;

@@ -24,7 +24,7 @@ int main() {
             m &= (2097150 - (1 << t));
         } else if (str.find("check") != string::npos) {
             int i = 1 << t;
-            if(!(m & i)) {
+            if (!(m & i)) {
                 printf("0\n");
             } else {
                 printf("1\n");
@@ -32,7 +32,7 @@ int main() {
         } else if (str.find("toggle") != string::npos) {
             unsigned int t1 = m | (1 << t);
             unsigned int t2 = m & (~(1 << t));
-            if(m == t1)
+            if (m == t1)
                 m = t2;
             else
                 m = t1;

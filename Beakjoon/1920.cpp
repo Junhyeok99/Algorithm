@@ -12,11 +12,11 @@ int find(const vector<int> &v, int tar) {
     int start = 0;
     int end = v.size() - 1;
 
-    while(start <= end) {
+    while (start <= end) {
         int mid = (start + end) / 2;
-        if(v[mid] == tar)
+        if (v[mid] == tar)
             return 1;
-        else if(v[mid] > tar)
+        else if (v[mid] > tar)
             end = mid - 1;
         else
             start = mid + 1;

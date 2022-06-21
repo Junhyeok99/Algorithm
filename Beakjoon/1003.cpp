@@ -8,9 +8,9 @@
 using namespace std;
 
 void calc(map<int, pair<int, int>> &m) {
-    for(int i = 2; i <= 40; i++) {
-        m[i].first = m[i-1].first + m[i-2].first;
-        m[i].second = m[i-1].second + m[i-2].second;
+    for (int i = 2; i <= 40; i++) {
+        m[i].first = m[i - 1].first + m[i - 2].first;
+        m[i].second = m[i - 1].second + m[i - 2].second;
     }
 }
 
@@ -23,7 +23,7 @@ int main() {
 
     calc(m);
 
-    for(cin >> t; t > 0; t--) {
+    for (cin >> t; t > 0; t--) {
         int c;
         cin >> c;
         printf("%d %d\n", m[c].first, m[c].second);

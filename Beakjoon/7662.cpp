@@ -18,7 +18,7 @@ int main() {
             char c;
             int n;
             scanf("%c %d", &c, &n);
-            if(c == '\n') {
+            if (c == '\n') {
                 k++;
                 continue;
             }
@@ -28,11 +28,11 @@ int main() {
             } else if (c == 'D' && !s.empty()) {
                 if (n == -1) {
                     m[*s.begin()]--;
-                    if(!m[*s.begin()])
+                    if (!m[*s.begin()])
                         s.erase(*s.begin());
                 } else if (n == 1) {
                     m[*s.rbegin()]--;
-                    if(!m[*s.rbegin()])
+                    if (!m[*s.rbegin()])
                         s.erase(*s.rbegin());
                 }
             }

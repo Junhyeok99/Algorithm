@@ -10,16 +10,16 @@ bool isPal(int n) {
     int arr[5];
     int l = 0;
 
-    while(true) {
+    while (true) {
         arr[l] = n % 10;
         l++;
-        if(n / 10 == 0)
+        if (n / 10 == 0)
             break;
         n = n / 10;
     }
 
-    for(int i = 0 ; i < l; i++) {
-        if(arr[i] != arr[l - 1 - i])
+    for (int i = 0; i < l; i++) {
+        if (arr[i] != arr[l - 1 - i])
             return false;
     }
 
@@ -27,10 +27,10 @@ bool isPal(int n) {
 }
 
 int main() {
-    while(true) {
+    while (true) {
         int in;
         scanf("%d", &in);
-        if(!in)
+        if (!in)
             break;
 
         printf("%s", isPal(in) ? "yes\n" : "no\n");

@@ -30,8 +30,8 @@ int main() {
 
     sort(v.begin(), v.end(), callback);
 
-    for(auto t : v) {
-        if(t.first >= last) {
+    for (auto t: v) {
+        if (t.first >= last) {
             cnt++;
             last = t.second;
         }

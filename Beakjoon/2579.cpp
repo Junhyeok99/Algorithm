@@ -47,23 +47,21 @@ int main() {
             if (i.second.second + 1 <= stairs.size()) {
                 N key = {i.first + stairs[i.second.second],
                          {i.second.first + 1, i.second.second + 1}};
-                if(score_set.find(key) == score_set.end()) {
+                if (score_set.find(key) == score_set.end()) {
                     temp_score_vector.push_back(key);
                     score_set.insert(key);
                 }
-            }
-            else
+            } else
                 continue;
 
             if (i.second.second + 2 <= stairs.size()) {
                 N key = {i.first + stairs[i.second.second + 1],
                          {1, i.second.second + 2}};
-                if(score_set.find(key) == score_set.end()) {
+                if (score_set.find(key) == score_set.end()) {
                     temp_score_vector.push_back(key);
                     score_set.insert(key);
                 }
-            }
-            else
+            } else
                 continue;
         }
 

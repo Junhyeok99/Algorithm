@@ -25,11 +25,11 @@ int main() {
         scanf("%s", name);
         string str(name);
 
-        if(s.find(str) != s.end())
+        if (s.find(str) != s.end())
             ans.insert(str);
     }
 
     printf("%d\n", ans.size());
-    for(const auto& i : ans)
+    for (const auto &i: ans)
         printf("%s\n", i.c_str());
 }
