@@ -3,4 +3,4 @@ project(Algorithm)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Algorithm utils/utils.cpp Beakjoon/10699.cpp)
+add_executable(Algorithm utils/utils.cpp Beakjoon/11718.cpp)
