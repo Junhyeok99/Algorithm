@@ -3,4 +3,4 @@ project(Algorithm)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Algorithm utils/utils.cpp Beakjoon/15964.cpp)
+add_executable(Algorithm utils/utils.cpp Programmers/main.cpp Programmers/divide_number_cards/divide_number_cards.cpp)
